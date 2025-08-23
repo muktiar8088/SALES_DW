@@ -1,0 +1,10 @@
+sources:
+  - name : sales
+    database: SALES_DW
+    schema : RAW
+    tables:
+      - name : PRODUCTS_RAW
+      - name:  SALES_RAW
+      - name : STORES_RAW
+      
+  
