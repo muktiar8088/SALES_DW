@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: products
+    columns:
+      - name: PRODUCT_ID
+        tests:
+          - unique
+          - not_null
+          - find_duplicates  # this is custom generic test
+          
+
+  - name: sales   # your sales fact model's name (e.g. sales.sql)
+    columns:
+      - name: PRODUCT_ID
+        tests:
+          - relationships:
+              to: ref('products')   # refers to products model
+              field: PRODUCT_ID     # column in products model to match
+
+  
+
+                   
+            
+
+          
+
+
+ 

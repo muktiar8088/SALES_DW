@@ -1,0 +1,10 @@
+seeds :
+  - name : dim_date
+    config:
+      delimiter : ","
+      column_types :
+        date_key : number
+        date     : date
+
+
+
