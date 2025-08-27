@@ -6,5 +6,10 @@ sources:
       - name : PRODUCTS_RAW
       - name:  SALES_RAW
       - name : STORES_RAW
+  - name : dimensions_facts
+    database: SALES_DW
+    schema: TRANSFORMED
+    tables:
+      - name: DIM_DATE
       
   
